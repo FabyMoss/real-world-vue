@@ -5,7 +5,6 @@ import EventList from 'C:/Users/user/real-world-vue/src/views/EventList.vue'
 import EventShow from 'C:/Users/user/real-world-vue/src/views/EventShow.vue'
 
 Vue.use(VueRouter)
-
 const routes = [
   {
     path: '/',
@@ -13,9 +12,10 @@ const routes = [
     component: EventList
   },
   {
-    path: '/event',
+    path: '/event/:id',
     name: 'event-show',
-    component: EventShow
+    component: EventShow,
+    props: true
   },
   {
     path: '/event/create',

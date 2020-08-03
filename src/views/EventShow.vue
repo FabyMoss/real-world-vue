@@ -1,3 +1,8 @@
 <template>
-  <h1>Events Listing #1</h1>
+  <h1>Showing event #{{ id }}</h1>
 </template>
+<script>
+export default {
+  props: ['id']
+}
+</script>
